@@ -13,7 +13,7 @@ from langchain_core.runnables import RunnableParallel
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.prompts import PromptTemplate
 from langchain_core.prompts import ChatPromptTemplate
-
+os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')
 
 def ChatTemplate():
  
