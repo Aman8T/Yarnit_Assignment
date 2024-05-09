@@ -48,8 +48,9 @@ def predict(payload: dict) -> Any:
         if not url or not question:
             raise HTTPException(status_code=422, detail="Missing 'url' or 'question'")
         
-        
+        # Calling the RAG model 
         data = RAG(url)
+        #Generating the Answer
         answer= data.predict(question)
         
         
