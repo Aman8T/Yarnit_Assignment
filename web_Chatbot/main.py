@@ -19,7 +19,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from model import ChatTemplate,RAG
 load_dotenv()
 chat_template =ChatTemplate
-
+os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')
 class Response(BaseModel):
     result: str | None
 
