@@ -16,7 +16,7 @@ from langchain_core.prompts import ChatPromptTemplate
 os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')
 
 def ChatTemplate():
- 
+  """Function to create a chat template for RAG Structure"""
 
   return ChatPromptTemplate.from_messages(
       [
