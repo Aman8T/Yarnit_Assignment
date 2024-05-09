@@ -16,20 +16,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 
 def ChatTemplate():
-  """Instructs the model to answer a question in a detailed way, citing the source document only at the end.
-
-  This function creates a prompt for GPT instruct models that includes:
-      - Instruction to answer the question using the provided document ONLY.
-      - Requirement for detailed answers that go beyond simple yes/no responses.
-      - Instruction to **ONLY cite the source document in square brackets as '[source]' at the very end of the answer**, if the answer is found within the context.
-      - Handling of cases where the answer cannot be found in the document, with a specific response to indicate this.
-
-  Args:
-      None
-
-  Returns:
-      A ChatPromptTemplate object containing the formatted prompt.
-  """
+ 
 
   return ChatPromptTemplate.from_messages(
       [
