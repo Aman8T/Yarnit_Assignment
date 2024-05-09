@@ -1,2 +1,2 @@
 # Yarnit
-Assignment for yarnit
+Submission repository for Both Tasks.
