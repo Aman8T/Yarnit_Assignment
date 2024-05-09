@@ -37,7 +37,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-#url: str,question: str
+
 llm = ChatOpenAI(model="gpt-3.5-turbo",temperature=2,max_tokens=1024)
 
 @app.post("/predict", response_model=Response)
@@ -48,7 +48,7 @@ def predict(payload: dict) -> Any:
         if not url or not question:
             raise HTTPException(status_code=422, detail="Missing 'url' or 'question'")
         
-        # Assuming RAG is your model and it has a method predict
+        
         data = RAG(url)
         answer= data.predict(question)
         
