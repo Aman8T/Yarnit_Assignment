@@ -29,7 +29,7 @@ def ChatTemplate():
 
 
 
-llm = ChatOpenAI(model="gpt-3.5-turbo",temperature=2,max_tokens=1024)
+llm = ChatOpenAI(model="gpt-3.5-turbo",temperature=0.1,max_tokens=1024)
 
 
 
