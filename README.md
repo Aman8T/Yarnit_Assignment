@@ -1,2 +1,2 @@
-# Yarnit_Assignment
+# Yarnit
 Assignment for yarnit
